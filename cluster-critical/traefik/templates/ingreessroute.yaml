@@ -1,0 +1,19 @@
+{{- if .Values.traefik.deployment.enabled -}}
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: {{ .Values.traefik.fullnameOverride }}
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - kind: Rule
+      match: Host(`{{ .Values.domain }}`)
+      priority: 10
+      services:
+        - kind: TraefikService
+          name: api@internal
+  tls:
+    secretName: ""
+{{- end }}
+

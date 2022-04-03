@@ -1,0 +1,10 @@
+[
+  {
+    "name": "traefik",
+    "cluster": "in-cluster",
+    "namespace": "ingress",
+    "path": "cluster-critical/traefik",
+    "valueFile": "home.yaml"
+  }
+]
+

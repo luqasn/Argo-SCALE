@@ -1,0 +1,11 @@
+cluster: home
+
+domain: traefik.example.domain.org
+
+traefik:
+  logs:
+    general:
+      format: json
+      level: INFO
+
+
