@@ -63,7 +63,7 @@ argo-cd:
       - --insecure
     config:
       admin.enabled: "true"
-      url: https://argo.example.domain.org
+      url: https://argo.internal.luqasn.org
       application.instanceLabelKey: argocd.argoproj.io/instance
     ingress:
       enabled: true
@@ -73,10 +73,10 @@ argo-cd:
         traefik.ingress.kubernetes.io/router.priority: "10"
         #cert-manager.io/cluster-issuer: le-production
       hosts:
-        - argo.example.domain.org
+        - argo.internal.luqasn.org
       tls:
         - secretName: ""
-          hosts: [argo.example.domain.org]
+          hosts: [argo.internal.luqasn.org]
     metrics:
       enabled: false
     resources:

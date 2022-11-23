@@ -1,6 +1,6 @@
 cluster: home
 
-domain: traefik.example.domain.org
+domain: traefik.internal.luqasn.org
 
 traefik:
   logs:

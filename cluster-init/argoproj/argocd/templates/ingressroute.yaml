@@ -7,7 +7,7 @@ spec:
     - websecure
   routes:
     - kind: Rule
-      match: Host(`argo.staging.schouten-lebbing.nl`) && Headers(`Content-Type`, `application/grpc`)
+      match: Host(`argo.internal.luqasn.org`) && Headers(`Content-Type`, `application/grpc`)
       priority: 11
       services:
         - name: argocd-server

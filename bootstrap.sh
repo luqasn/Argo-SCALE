@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-repo="https://github.com/truecharts/Argo-SCALE.git"
+repo="https://github.com/luqasn/Argo-SCALE.git"
 pool=tank
 adminpassword=$(< /dev/urandom tr -dc _A-Z-a-z-0-9 | head -c${1:-32};echo;)
 
